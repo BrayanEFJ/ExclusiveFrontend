@@ -1,30 +1,17 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import HomeView from './views/HomeView.vue';  // Asumiendo que HomeView.vue está en la misma carpeta que el componente actual.
+import TheNavBar from './components/Base/TheNavBar.vue';  // Asumiendo que TheNavBar.vue está en la misma carpeta que el componente actual.
 </script>
 
 <template>
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+  <div class="w-full max-w-[1380px] flex items-center justify-center mx-auto flex-col">
+    <TheNavBar />
   </div>
-  <HelloWorld msg="Vite + Vue" />
+
+
 </template>
 
+
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
+
 </style>
